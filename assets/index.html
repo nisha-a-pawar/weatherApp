@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wheather-card">
+        <h2>Weather</h2>
+        <div class="card-header">
+            <label for="latitude" aria-label="latitude">Latitude</label>
+            <input type="text" placeholder="Enter Latitude" id="latitude">
+            <label for="longitude" aria-label="longidude">Longitude</label>
+            <input type="text" placeholder="Enter Longitude" id="longitude">
+            <button id="btn-submit">Check</button>
+        </div>
+    </div>
+            <div class="card-body">
+                <div class="wheather-body">
+                    <h3 id="latitude-display">Latitude:</h2>
+                    <h3 id="longitude-display">Longitude:</h2>
+                       
+                            <h3 id="time">Time:</h3>
+                            <!-- <h3 id="windspeed">WindSpeed:</h3> -->
+                            <!-- <h3 id="rain">Rain:</h3> -->
+                            <h3 id="isDay">Is Day or Night:</h3>
+                </div>
+
+                <div class="weather-summary">
+                    <div class="one">
+                        <img src="./cloudy.png" alt="rainy day">
+                        <h3 id="temperature">Temp<sup>o</sup>c</h3>
+                    </div>
+                    <div class="two">
+                        <h3>Mostly Rainy</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- <script src="app.js"></script> -->
+             <script src="index.js"></script>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
