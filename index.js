@@ -3,7 +3,7 @@ const longitudeInput = document.getElementById('longitude');
 const btnSubmit = document.getElementById('btn-submit');
 const longitude = document.getElementById('longitude-display');
 const latitude = document.getElementById('latitude-display');
-const temparature = document.getElementById('temperature');
+const temperature = document.getElementById('temperature');
 // const windspeed=document.getElementById('windspeed');
 const time = document.getElementById('time');
 // const rain = document.getElementById('rain');
@@ -37,14 +37,14 @@ async function revealEverything(){
     // displayWeather.classList.remove('d-none');
     // displayWeather.classList.add('display');
      
-    if (Number(isDay.innerText) === 1) {
-        document.body.style.backgroundImage = `url("day.jpg")`;
-    } else if (Number(isDay.innerText) === 0) {
-        document.body.style.backgroundImage = `url("night.jpg")`;
-    } else {
-        document.body.style.backgroundColor = '#272727';
-    }
+    if (response.current.is_day === 1) {
+        document.body.style.backgroundImage =`url("day.jpg")`;
+        document.body.wheather-card.style.backgroundColor = "#aa9c8d";
+        
+   }
+   else if(response.current.is_day===0){
+    document.body.style.backgroundImage =`url("night.jpg")`;
 
+   }
 }
-
-btnSubmit.addEventListener('click',revealEverything)
+btnSubmit.addEventListener('click',revealEverything);

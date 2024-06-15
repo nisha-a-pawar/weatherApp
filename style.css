@@ -10,7 +10,10 @@ h2{
 }
 
 body{
-    
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height:100vh;
     background-color: #1c1c1c;
     display: flex;
     flex-direction: column;
